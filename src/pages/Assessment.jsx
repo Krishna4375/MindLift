@@ -72,7 +72,7 @@ const archetypes = {
   },
   warrior: {
     title: "The Resilient Warrior",
-    desc: "You push through challenges, but remember to rest as hard as you work.",
+    desc: "You push through challenges , but remember to rest as hard as you work.",
   },
   seeker: {
     title: "The Wellness Seeker",
