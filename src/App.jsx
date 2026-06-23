@@ -30,7 +30,7 @@ const AnimatedRoutes = () => {
     </AnimatePresence>
   );
 };
-//global nottificattion 
+
 const GlobalNotifications = () => {
   const { addNotification } = useNotification();
 
