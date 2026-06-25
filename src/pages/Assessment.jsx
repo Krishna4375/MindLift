@@ -92,7 +92,7 @@ const getArchetype = (score, stress) => {
 };
 
 export default function Assessment() {
-  const [step, setStep] = useState(-1); // -1 for Name Input
+  const [step, setStep] = useState(-1); 
   const [name, setName] = useState("");
   const [answers, setAnswers] = useState({});
   const [totalScore, setTotalScore] = useState(0);
