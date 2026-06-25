@@ -51,7 +51,6 @@ export default function Relax() {
   const [soundEnabled, setSoundEnabled] = useState(false);
   const [activeSound, setActiveSound] = useState(soundscapes[0]);
 
-  
   useEffect(() => {
     let interval;
     if (isActive) {
