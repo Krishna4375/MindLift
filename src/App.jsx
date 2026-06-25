@@ -30,7 +30,6 @@ const AnimatedRoutes = () => {
     </AnimatePresence>
   );
 };
-
 const GlobalNotifications = () => {
   const { addNotification } = useNotification();
 
@@ -41,12 +40,10 @@ const GlobalNotifications = () => {
       { msg: "Your focus score is rising! 🚀", type: "success" },
       { msg: "Take a deep breath... 🌬️", type: "info" },
     ];
-
     const timer = setInterval(() => {
       const randomAlert = alerts[Math.floor(Math.random() * alerts.length)];
       addNotification(randomAlert.msg, randomAlert.type);
     }, 60000);
-
     return () => clearInterval(timer);
   }, [addNotification]);
 
@@ -57,7 +54,6 @@ function App() {
   useEffect(() => {
     initializeUserData(defaultUser);
   }, []);
-
   return (
     <BrowserRouter>
       <div className="min-h-screen text-white overflow-hidden bg-gradient-to-br from-indigo-950 via-black to-purple-950">
